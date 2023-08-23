@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero App</title>
+    <link href="/output.css" rel="stylesheet">
+</head>
+<body class="flex flex-col justify-center items-center">
+    <div class="flex flex-col justify-center items-center p-8">
+        <h1 class=" font-mono text-4xl">⭐SUPERHERO APP</h1>
+        <p class="text-center">You can search for a superhero like "Thanos" or "Batman" or... You can generate a random hero</p>
+    </div>
+    <div class="flex flex-col justify-center items-center h-full w-[60vh]  bg-yellow-600 gap-3 rounded-xl">
+        <div class="h-10 w-1/4 bg-red-700 mt-2 flex justify-center items-center rounded-lg  "><h2 class="text-center"id="headName"></h2></div>
+        
+        <div  id="heroImage" class="bg-purple-950 h-80 w-60 rounded-lg p-4"><img src="" alt=""></div>
+        <p class="text-center h-20 w-80 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg"id="stats"></p>
+        <div>
+            <input class="border rounded-md" id="inputHero" type="text">
+            <button class="border rounded-md p-1" id="searchBtn">Search</button>
+        </div>
+        
+        <button id="newBtn" class="border rounded-md mb-4 p-1">Get Random Hero</button>
+        
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
